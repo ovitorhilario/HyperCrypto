@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/gap_larger"
+    android:layout_marginTop="@dimen/gap_larger"
+    app:contentPaddingBottom="4dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_card"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_card_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/gap_larger"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:text="$49,543.66"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/iv_card_ic_coin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_card_ic_coin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_fire"
+            app:layout_constraintBottom_toBottomOf="@id/tv_card_balance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_card_balance" />
+
+        <TextView
+            android:id="@+id/tv_card_balance_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_small"
+            android:text="@string/balance_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_balance" />
+
+        <Button
+            android:id="@+id/btn_card_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#30000000"
+            android:text="@string/deposit"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_balance_info" />
+
+        <Button
+            android:id="@+id/btn_card_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_small"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#30000000"
+            android:text="@string/withdraw"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/btn_card_deposit"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_balance_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

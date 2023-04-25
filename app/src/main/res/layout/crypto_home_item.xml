@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/gap_normal"
+    android:layout_marginTop="@dimen/gap_normal"
+    app:cardBackgroundColor="#E8DEF8"
+    app:contentPadding="@dimen/gap_normal"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_crypto_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="@dimen/gap_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_crypto_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_larger"
+            android:text="BTC"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_larger"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_crypto_percent_state"
+            app:layout_constraintStart_toEndOf="@id/iv_crypto_icon"
+            app:layout_constraintTop_toTopOf="@id/iv_crypto_icon"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_crypto_percent_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_larger"
+            android:text="+1.6%"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_normal"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_crypto_icon"
+            app:layout_constraintStart_toEndOf="@id/iv_crypto_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_crypto_name"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_crypto_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$32543,342"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_larger"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iv_crypto_arrow_trend"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/gap_normal"
+            app:layout_constraintBottom_toBottomOf="@id/iv_crypto_icon"
+            app:layout_constraintStart_toEndOf="@id/tv_crypto_percent_state"
+            app:layout_constraintTop_toTopOf="@id/iv_crypto_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

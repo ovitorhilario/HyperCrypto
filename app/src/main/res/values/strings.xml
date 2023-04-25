@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">hypercrypto</string>
+    <string name="balance_info">Your balance is equivalent</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="wallet_name">My Wallet</string>
+    <string name="coin_type_setting">Coin type settings</string>
+    <string name="what_is_the_currency_type">What is the currency type?</string>
+    <string name="BRL_type">BRL</string>
+    <string name="USD_type">USD</string>
+    <string name="EUR_type">EUR</string>
+    <string name="value_to_deposit">Value to deposit</string>
+    <string name="value_to_withdraw">Value to withdraw</string>
+    <string name="currency_balance">Currency Balance</string>
+    <string name="deposit_error_msg">Error to deposit</string>
+    <string name="withdraw_error_msg">Error to withdraw</string>
+</resources>
